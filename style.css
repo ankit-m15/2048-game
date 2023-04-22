@@ -1,6 +1,7 @@
 body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    background-color: aliceblue;
 }
 
 hr {
@@ -8,8 +9,8 @@ hr {
 }
 
 #board {
-    width: 440px;
-    height: 440px;
+    width: 400px;
+    height: 400px;
 
     background-color: #bbada0;
     border: 5px solid #bbada0;
@@ -19,9 +20,9 @@ hr {
     flex-wrap: wrap;
 }
 
-.tiles{
-    width: 100px;
-    height: 100px;
+.tiles {
+    width: 90px;
+    height: 90px;
     border: 5px solid #bbada0;
     background-color: #cdc1b5;
     border-radius: 15px;
@@ -32,7 +33,9 @@ hr {
     align-items: center;
 }
 
-/* followed standard color for tiles */
+
+/* colored tiles */
+
 .x2 {
     background-color: #eee4da;
     color: #727371;
