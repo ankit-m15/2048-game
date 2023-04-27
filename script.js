@@ -159,9 +159,29 @@ function isEmpty(){
     }
     return false;
 }
+function check(){
+    let flag=0;
+    for(let i=0; i<rows; i++){
+        for(let j=0; j<cols; j++){
+            if(board[i][j]>=2048){
+                flag=1;
+                break;
+            }
+        }
+    }
+    if(flag===1){
+
+        alert("your socre is "+score+". you won the game.");
+    }
+    else{
+        alert("you lost the game");
+    }
+}
+
+
 function insertTwo(){
     if(!isEmpty()){
-        return;
+        check();
     }
     while(true){
         let i=Math.floor(Math.random()*rows);
